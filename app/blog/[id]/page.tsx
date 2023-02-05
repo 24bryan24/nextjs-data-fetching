@@ -2,7 +2,7 @@
 async function getStaticSideProps(context: any) {
   const id = context.params?.id;
   const postResponse = await fetch(
-    "https://jsonplaceholder.typicode.com/posts"
+    "https://jsonplaceholder.typicode.com/users"
   );
   const post = await postResponse.json();
 
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 
 async function fetchPost(id: string) {
   const postResponse = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${id}`
+    `https://jsonplaceholder.typicode.com/users`
   );
 
   console.log("Fetching blog post with id: ", id);

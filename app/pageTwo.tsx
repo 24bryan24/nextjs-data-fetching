@@ -1,16 +1,12 @@
 import Image from "next/image";
 // import Carousel from "../components/carousel";
-import Navbar from "../components/navbarTwo";
+import Navbar from "../components/navbar";
 // import HomePage from "../components/homePage";
 import styles from "./page.module.scss";
 import HomePageTwo from "../components/homePageTwo";
 
-
-import './page.css'
-
 //React-transition-group
 import {CSSTransition} from 'react-transition-group';
-import NavbarTwo from "../components/navbarTwo";
 
 // async function getData() {
 //   const productsResponse = await fetch(
@@ -28,11 +24,10 @@ export default async function Home() {
   // console.log("Products: ", products);
 
   return (
-    <div className="App" 
+    <div className={styles.app} 
     // style={{ "--color": "black" }}
     >
-          <Navbar />
-        <div className="wrapper">
+        <div className={styles.wrapper}>
           {/* {showScrollToTopIcon()} */}
 
           {/* <CSSTransition
@@ -41,7 +36,7 @@ export default async function Home() {
             timeout={300}
             unmountOnExit
           > */}
-            <div className="mobile-menu-wrapper">
+            <div className={styles.mobile_menu_wrapper}>
               {/* <MobileNavigation
                 closeMobileMenu={() => toggleMobileMenu(false)}
               /> */}
@@ -55,7 +50,7 @@ export default async function Home() {
             unmountOnExit
           > */}
             <div
-              className="mobile-menu-overlay"
+              className={styles.mobile_menu_overlay}
               // onClick={() => toggleMobileMenu(false)}
             ></div>
           {/* </CSSTransition> */}
@@ -66,16 +61,14 @@ export default async function Home() {
             timeout={300}
             unmountOnExit
           > */}
-            <div className="scrollToTop" 
+            <div className={styles.scrollToTop} 
             // onClick={smoothScrollToTop}
             >
               {/* <BackToTop /> */}
             </div>
           {/* </CSSTransition> */}
 
-          <NavbarTwo
-          // openMobileMenu={() => toggleMobileMenu(true)} 
-          />
+          {/* <Navigation openMobileMenu={() => toggleMobileMenu(true)} /> */}
 
               {/* <CSSTransition
                 // in={match != null}
@@ -83,7 +76,7 @@ export default async function Home() {
                 classNames="slide-backward"
                 unmountOnExit
               > */}
-                <div className="page">
+                <div className={styles.page}>
                   <HomePageTwo 
                   // scrollToTop={scrollToTop} 
                   />

@@ -1,0 +1,430 @@
+.homeView {
+    background-image: url('../assets/Background/wave.svg'), url('../assets/Background/wave2.svg');
+    background-position: top 32% left 0%, top 80% left 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.aboutUs {
+    position: relative;
+    margin-top: 1em;
+}
+.golden_rule {
+    color: #f3f305;
+}
+.text {
+    margin-left: 2.5em;
+    max-width: 500px;
+}
+.text a {
+    text-decoration: none;
+    color: black;
+}
+.showMore {
+    display: inline-block;
+    border-bottom: 1px solid white;
+}
+.showMore span {
+    margin-left: 0.5em;
+}
+.showMore:hover {
+    border-bottom: 1px solid black;
+}
+.aboutUs #square {
+    top: 40%;
+    right: 10%;
+    width: 180px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 7em;
+}
+.card {
+    flex-basis: calc(100% / 4);
+    flex-shrink: 0;
+    min-width: 170px;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    -webkit-box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.55);
+}
+.card h4 {
+    color: #05a0e3;
+    margin: 0;
+}
+.card p {
+    font-size: 0.9em;
+    margin-top: 0;
+}
+.card img {
+    display: block;
+    margin: 3em auto;
+    width: 50%;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+}
+.card a {
+    color: #05a0e3;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 0.5em;
+    border: 0.15em solid #05a0e3;
+    border-radius: 0.3em;
+    transition: 0.1s ease-in-out;
+    position: relative;
+}
+.card a:hover {
+    background-color: #05a0e3;
+    color: white;
+}
+.card a::after {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: #05a0e3;
+    position: absolute;
+    top: 47%;
+    right: -3.5%;
+}
+.showMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+}
+.showMore a {
+    transition: none;
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: black;
+    padding: 0;
+    width: inherit;
+}
+.showMore a:hover {
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+.showMore a::after {
+    width: 0px;
+    height: 0px;
+}
+.portfolio {
+    background: none;
+    position: relative;
+}
+.homeView .portfolio #square {
+    top: 5%;
+    right: 35%;
+    width: 160px;
+    transform: rotate(40deg);
+}
+.homeView .portfolio h4 {
+    margin-top: 1em;
+    margin-bottom: 1.8em;
+}
+.homeView .allWorks {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../assets/images/Kitchen.jpg') center center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.homeView .allWorks h3 {
+    margin-top: 0;
+    color: white;
+}
+.homeView .allWorks a {
+    color: white;
+    text-decoration: none;
+    background-color: #05a0e3;
+    border-radius: 0.3em;
+    padding: 0.8em 2em;
+    display: inline-block;
+    font-weight: 300;
+    position: relative;
+}
+.homeView .allWorks a::after {
+    position: absolute;
+    top: 50%;
+    right: -2.5%;
+    content: '';
+    width: 15px;
+    height: 1px;
+    background-color: white;
+}
+.homeView .allWorks #circle {
+    position: absolute;
+    top: -40%;
+    right: 40%;
+    width: 100px;
+    z-index: -1;
+}
+.homeView .contact {
+    position: relative;
+}
+.homeView .contact h2 {
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+}
+.homeView .contact #square {
+    top: -15%;
+    right: 17%;
+    width: 200px;
+    transform: rotate(40deg);
+}
+.homeView .contact .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.homeView .contact .wrapper .info {
+    width: 35%;
+    padding: 2em;
+    min-width: 180px;
+    max-width: 330px;
+    background-color: #05a0e3;
+    color: white;
+    border-radius: 0.5em;
+}
+.homeView .contact .wrapper .info p {
+    line-height: 0.45em;
+    font-weight: 300;
+    margin-bottom: 0.4em;
+}
+.homeView .contact .wrapper .info .column:nth-of-type(2), .homeView .contact .wrapper .info .column:nth-of-type(3) {
+    margin-top: 2em;
+}
+.homeView .contact .wrapper .info .column .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1em;
+}
+.homeView .contact .wrapper .info .column .heading h4 {
+    margin-left: 0.5em;
+    margin-top: 0.1em;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.homeView .contact .wrapper .form {
+    width: 40%;
+    min-width: 300px;
+    max-width: 500px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.homeView .contact .wrapper .form input, .homeView .contact .wrapper .form textarea {
+    padding: 0.8em;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.09em solid #ccc;
+    border-radius: 0.3em;
+    outline: none;
+    font-family: inherit;
+    -webkit-box-shadow: 0px 2px 7px -5px #000;
+    box-shadow: 0px 2px 7px -5px #000;
+    margin: 1em 0;
+}
+.homeView .contact .wrapper .form textarea {
+    height: 10em;
+}
+.homeView .contact .wrapper .form input:first-of-type {
+    margin-top: 0;
+}
+.homeView .contact .wrapper .form .send {
+    background-color: #05a0e3;
+    color: white;
+    width: auto;
+    display: inline-block;
+    margin-top: 1.5em;
+    padding: 1em 3em;
+    -webkit-box-shadow: 0px 2px 7px -5px #000;
+    box-shadow: 0px 2px 7px -5px #000;
+    border-radius: 0.3em;
+    border: none;
+}
+.homeView .contact .wrapper .form .send a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 0.5em;
+}
+.homeView .contact .wrapper .form .send a::after {
+    content: '';
+    width: 25px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 47%;
+    right: -100%;
+}
+.homeView .contact .wrapper .form .send:hover {
+    cursor: pointer;
+}
+/*Media queries*/
+@media screen and (max-width: 1100px) {
+    .homeView {
+        background-position: top 35% left 0, top 80% left 0 !important;
+        background-size: 150%, 150% !important;
+       /*about us section*/
+       /*about us section*/
+   }
+    .homeView .rentalOffer {
+        width: 100%;
+        justify-content: space-around;
+   }
+    .homeView .aboutUs #square {
+        top: 0;
+   }
+    .homeView .certificates .card-container {
+        margin-top: 3em;
+   }
+}
+@media screen and (max-width: 950px) {
+   /*certificates section*/
+    .homeView {
+        background-position: top 27% left 0, top 80% left 0 !important;
+        background-size: 150%, 150% !important;
+   }
+    .homeView .certificates .card-container {
+        justify-content: flex-start !important;
+   }
+    .homeView .certificates .card-container .card {
+        flex-basis: calc(100% / 2) !important;
+        max-width: 47%;
+        min-width: 205px !important;
+        margin: 3%;
+        box-sizing: border-box;
+   }
+    .homeView .certificates .card-container .card:nth-of-type(1), .homeView .certificates .card-container .card:nth-of-type(3) {
+        margin-left: 0;
+   }
+    .homeView .certificates .card-container .card:nth-of-type(1) {
+        margin-top: 0;
+   }
+    .homeView .certificates .card-container .card:nth-of-type(2) {
+        margin-right: 0;
+        margin-top: 0;
+   }
+}
+@media screen and (max-width: 830px) {
+    .homeView .aboutUs {
+        margin-top: 4em;
+   }
+    .homeView .aboutUs .text {
+        margin-left: 0;
+   }
+    .homeView .aboutUs #square {
+        width: 140px;
+   }
+    .homeView .portfolio #square {
+        right: 0;
+        top: -20%;
+   }
+    .homeView .contact {
+        padding-top: 16em;
+   }
+    .homeView .contact #square {
+        width: 120px;
+        top: 0;
+        right: 20%;
+   }
+    .homeView .contact h2 {
+        margin-bottom: 1em;
+   }
+    .homeView .contact .wrapper {
+        flex-direction: column;
+   }
+    .homeView .contact .wrapper .info {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+   }
+    .homeView .contact .wrapper .info .column {
+        margin-top: 0 !important;
+        margin: 0.5em;
+   }
+    .homeView .contact .wrapper .form {
+        width: 100%;
+        margin-top: 2em;
+        max-width: 100%;
+        overflow: hidden;
+   }
+}
+@media screen and (max-width: 550px) {
+    .homeView {
+        background-image: none;
+   }
+    .homeView .rentalOffer {
+        display: none;
+   }
+    .homeView .aboutUs .text {
+        max-width: 100%;
+   }
+    .homeView .aboutUs #square {
+        width: 100px;
+   }
+    .homeView .certificates .card-container {
+        flex-direction: column;
+        align-items: center;
+   }
+    .homeView .certificates .card-container .card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+   }
+    .homeView .certificates .card-container .card:nth-of-type(2) {
+        margin-top: 2em;
+        margin-bottom: 2em;
+   }
+}
+@media screen and (max-width: 425px) {
+    .homeView .certificates .card-container .card {
+        width: 100%;
+        max-width: 100%;
+   }
+    .homeView .contact .wrapper .info {
+        flex-direction: column;
+   }
+    .homeView .contact .wrapper .info .column {
+        margin: 0.5em;
+   }
+    .homeView .contact .wrapper .info .column:nth-child(2) {
+        margin-top: 0.5em !important;
+        margin-bottom: 1em !important;
+   }
+    .homeView .contact .wrapper .form {
+        min-width: 100%;
+        overflow: hidden;
+   }
+    .homeView .contact .wrapper .form .send {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+   }
+    .homeView .contact .wrapper .form .send a::after {
+        display: none;
+   }
+}

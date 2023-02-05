@@ -1,0 +1,66 @@
+.slider-main {
+    width: 100%;
+   /*Media queries - MOBILE*/
+}
+.slide-1, .slide-2, .slide-3 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    outline: none;
+}
+.text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.text p {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+.text h1 {
+    margin-top: 0;
+    color: #05a0e3;
+    font-size: 5em;
+}
+.slider-main .slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("../assets/images/living-room-makeover.jpg") center center;
+}
+.slider-main .slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)), url('../assets/images/new-flooring-throughout.jpg') center center;
+}
+.slider-main .slide-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../assets/images/poway-kitchen-remodel-with-island-seating.jpg') center center;
+}
+.slider-main .slick-dots {
+    bottom: 15%;
+}
+.slider-main .slick-dots li {
+    margin: 0 1em;
+}
+.slider-main .slick-dots li button:before {
+    font-size: 20px;
+    color: white;
+    opacity: 1;
+    content: '▬▬';
+}
+.slider-main .slick-dots .slick-active button::before {
+    color: #05a0e3 !important;
+    opacity: 1 !important;
+}
+@media screen and (max-width: 500px) {
+    .slider-main .slide-1, .slider-main .slide-2, .slider-main .slide-3 {
+        height: 400px !important;
+        background-size: cover;
+   }
+    .slider-main .slide-1 .text, .slider-main .slide-2 .text, .slider-main .slide-3 .text {
+        top: 20%;
+        left: 5%;
+   }
+    .slider-main .slide-1 .text h1, .slider-main .slide-2 .text h1, .slider-main .slide-3 .text h1 {
+        font-size: 4em !important;
+   }
+    .slider-main .slick-dots {
+        bottom: 5%;
+   }
+}

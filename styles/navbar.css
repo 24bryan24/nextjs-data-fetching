@@ -1,0 +1,81 @@
+.bladeSVG {
+    fill: black !important;
+  }
+  nav {
+    /* padding: 0.5em 0 0 0; */
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: blue;
+    width: 100%;
+    /*Media queries*/
+  }
+  .logo {
+    padding-top: 1rem;
+    position: relative;
+    font-size: 0.7em;
+  }
+  .bladeImg {
+    /* padding-top: 1rem; */
+    transform-origin: center;
+  }
+  .nav_items {
+    position: fixed;
+    /* padding-top: 1rem; */
+    margin: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile_menu_icon {
+    display: none;
+    cursor: pointer;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 10rem;
+  }
+  li {
+    display: inline-block;
+    margin: 0 1.5em;
+    color: black;
+    font-weight: 400;
+  }
+  .active {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+  }
+  .active:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #f3f305;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s;
+  }
+  .active:hover:after {
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    .nav_items {
+      justify-content: space-between;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile_menu_icon {
+      display: block;
+      color: #f3f305;
+      font-size: 2em;
+    }
+  }
+  

@@ -1,0 +1,408 @@
+.aboutView {
+    background-image: url('../Img/Background/wave3.svg'), url('../Img/Background/wave4.svg');
+    background-position: top 0% left 0%, top 60% left 0%;
+    background-repeat: no-repeat;
+   /*About us*/
+   /*What we do*/
+   /*Our Standards*/
+}
+.aboutView .aboutUs {
+    position: relative;
+    z-index: 1;
+}
+.aboutView .aboutUs .text {
+    margin-left: 2.5em;
+    max-width: 600px;
+}
+.aboutView .aboutUs .golden-rule {
+    color: #f3f305;
+}
+.aboutView .aboutUs #triangle {
+    fill: none;
+    stroke: #05a0e3;
+    stroke-width: 0.3;
+    width: 250px;
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    transform: rotate(-50deg);
+}
+.aboutView .aboutUs .image {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20%;
+    right: 9%;
+}
+.aboutView .aboutUs #square {
+    fill: none;
+    stroke: #05a0e3;
+    stroke-width: 0.3;
+    position: absolute;
+    right: 25%;
+    bottom: -30%;
+    z-index: -1;
+    width: 250px;
+    transform: rotate(-10deg);
+}
+.aboutView .whatWeDo {
+    z-index: 1;
+    position: relative;
+   /*SVG stylings*/
+}
+.aboutView .whatWeDo #square {
+    fill: none;
+    stroke: #05a0e3;
+    stroke-width: 0.5;
+    position: absolute;
+    left: -15%;
+    top: 50%;
+    z-index: -1;
+    width: 130px;
+    transform: rotate(20.5deg);
+}
+.aboutView .whatWeDo #circle {
+    fill: none;
+    stroke: #05a0e3;
+    stroke-width: 0.8;
+    position: absolute;
+    right: -5%;
+    bottom: 0;
+    z-index: -1;
+    width: 50px;
+}
+.aboutView .whatWeDo .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 7em;
+}
+.aboutView .whatWeDo .card-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48.5%;
+    padding: 4em 3em;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    -webkit-box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.55);
+    margin: 1em 0;
+    background-color: white;
+}
+.aboutView .whatWeDo .card-container .card p {
+    margin: 1em 0 0 0;
+}
+.aboutView .whatWeDo .card-container .card #icon {
+    width: 90px;
+}
+.aboutView .whatWeDo .card-container .card:nth-of-type(5) #icon {
+    margin-left: 2em;
+}
+.aboutView .whatWeDo .card-container .card:nth-of-type(1), .aboutView .whatWeDo .card-container .card:nth-of-type(4), .aboutView .whatWeDo .card-container .card:nth-of-type(5) {
+    color: #05a0e3;
+}
+.aboutView .whatWeDo .card-container .card:nth-of-type(2), .aboutView .whatWeDo .card-container .card:nth-of-type(3), .aboutView .whatWeDo .card-container .card:nth-of-type(6) {
+    background-color: #05a0e3;
+    color: white;
+}
+.aboutView .whatWeDo #building .st0 {
+    display: none;
+}
+.aboutView .whatWeDo #building .st1 {
+    fill: #fff;
+    stroke: #05a0e3;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+.aboutView .whatWeDo #building .st2 {
+    fill: #05a0e3;
+}
+.aboutView .whatWeDo #excavator .st3 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 3;
+}
+.aboutView .whatWeDo #excavator .st4 {
+    fill: #fff;
+}
+.aboutView .whatWeDo #excavator .st5 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+.aboutView .whatWeDo #excavator .st6 {
+    fill: #05a0e3;
+}
+.aboutView .whatWeDo #wrench .st6 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 3;
+}
+.aboutView .whatWeDo #wrench .st7 {
+    fill: #fff;
+}
+.aboutView .whatWeDo #wrench .st8 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+.aboutView .whatWeDo #wrench .st9 {
+    fill: #05a0e3;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 0;
+}
+.aboutView .whatWeDo #painter .st7 {
+    fill: none;
+    stroke: #05a0e3;
+    stroke-miterlimit: 10;
+    stroke-width: 3;
+}
+.aboutView .whatWeDo #painter .st8 {
+    fill: #05a0e3;
+}
+.aboutView .whatWeDo #spray .st8 {
+    fill: none;
+    stroke: #05a0e3;
+    stroke-miterlimit: 10;
+    stroke-width: 3;
+}
+.aboutView .whatWeDo #spray .st9 {
+    fill: #05a0e3;
+}
+.aboutView .whatWeDo #shield .st0 {
+    display: none;
+}
+.aboutView .whatWeDo #shield .st1 {
+    display: inline;
+    fill: #fff;
+    stroke: #05a0e3;
+    stroke-width: 5.6693;
+    stroke-miterlimit: 10;
+}
+.aboutView .whatWeDo #shield .st2 {
+    display: inline;
+    fill: #05a0e3;
+}
+.aboutView .whatWeDo #shield .st3 {
+    display: inline;
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+.aboutView .whatWeDo #shield .st4 {
+    display: inline;
+    fill: #fff;
+}
+.aboutView .whatWeDo #shield .st5 {
+    display: inline;
+    fill: #fff;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+.aboutView .whatWeDo #shield .st6 {
+    display: inline;
+    fill: #05a0e3;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+.aboutView .whatWeDo #shield .st7 {
+    display: inline;
+    fill: none;
+    stroke: #05a0e3;
+    stroke-miterlimit: 10;
+}
+.aboutView .whatWeDo #shield .st8 {
+    fill: #fff;
+}
+.aboutView .whatWeDo #shield .st9 {
+    fill: #05a0e3;
+}
+.aboutView .ourStandards .text {
+    max-width: 600px;
+}
+.aboutView .ourStandards .standard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2.5em;
+}
+.aboutView .ourStandards .standard-container .standard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.5em;
+    -webkit-box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.55);
+    margin: 1em 0;
+    padding: 2em;
+    width: 85%;
+    background-color: white;
+    box-sizing: border-box;
+   /*SVG Stylings*/
+}
+.aboutView .ourStandards .standard-container .standard .standard-text {
+    margin-left: 1em;
+}
+.aboutView .ourStandards .standard-container .standard .standard-text h4 {
+    color: #05a0e3;
+    margin: 0 0 0.3em 0;
+    font-size: 1.4em;
+}
+.aboutView .ourStandards .standard-container .standard .standard-text p {
+    margin: 0;
+}
+.aboutView .ourStandards .standard-container .standard #standard {
+    width: 60px;
+    margin-right: 1em;
+}
+.aboutView .ourStandards .standard-container .standard #standard1 .st8 {
+    fill: #05a0e3;
+}
+.aboutView .ourStandards .standard-container .standard #standard2 .st8 {
+    fill: #05a0e3;
+}
+.aboutView .ourStandards .standard-container .standard #standard2 .st9 {
+    fill: #fff;
+}
+.aboutView .ourStandards .standard-container .standard #standard3 .st8 {
+    fill: #05a0e3;
+}
+.aboutView .ourStandards .standard-container .standard #standard4 .st8 {
+    fill: #05a0e3;
+}
+.aboutView .ourStandards .standard-container .standard #standard4 .st9 {
+    fill: #fff;
+}
+/*Media queries*/
+@media screen and (min-width: 1550px) {
+    .aboutView {
+        background: none !important;
+   }
+}
+@media screen and (max-width: 1100px) {
+    .aboutView .aboutUs #triangle {
+        width: 180px;
+        top: -8%;
+   }
+    .aboutView .aboutUs #square {
+        width: 130px;
+        bottom: -20%;
+   }
+    .aboutView .whatWeDo .card-container {
+        margin-top: 3em;
+   }
+    .aboutView .whatWeDo .card-container .card {
+        padding: 2em 2em;
+        box-sizing: border-box;
+        text-align: center;
+   }
+    .aboutView .ourStandards .standard-container .standard {
+        width: 100%;
+   }
+}
+@media screen and (max-width: 830px) {
+    .aboutView {
+        background-position: top 0% left 0, top 80% left 0 !important;
+        background-size: 120%, 150% !important;
+   }
+    .aboutView .aboutUs .text {
+        margin-left: 0;
+   }
+    .aboutView .aboutUs #triangle {
+        width: 140px;
+        top: -4%;
+   }
+    .aboutView .aboutUs #square {
+        width: 100px;
+   }
+    .aboutView .ourStandards .standard-container .standard .standard-text h4 {
+        font-size: 1.2em;
+   }
+    .aboutView .ourStandards .standard-container .standard #standard {
+        min-width: 50px;
+   }
+}
+@media screen and (max-width: 550px) {
+    .aboutView {
+        background: none;
+   }
+    .aboutView .aboutUs #triangle {
+        width: 100px;
+        top: -2%;
+   }
+    .aboutView .aboutUs #square {
+        width: 80px;
+        right: 0;
+        bottom: -10%;
+   }
+    .aboutView .whatWeDo .card-container {
+        flex-direction: column;
+   }
+    .aboutView .whatWeDo .card-container .card {
+        width: 100%;
+        padding: 1.5em;
+   }
+    .aboutView .whatWeDo .card-container .card:nth-of-type(3) {
+        color: #05a0e3;
+        background-color: white;
+   }
+    .aboutView .whatWeDo .card-container .card:nth-of-type(3) #wrench .st6 {
+        fill: none;
+        stroke: #05a0e3;
+        stroke-miterlimit: 10;
+        stroke-width: 3;
+   }
+    .aboutView .whatWeDo .card-container .card:nth-of-type(3) #wrench .st7 {
+        fill: #05a0e3;
+   }
+    .aboutView .whatWeDo .card-container .card:nth-of-type(3) #wrench .st8 {
+        fill: #05a0e3;
+        stroke: #05a0e3;
+        stroke-miterlimit: 10;
+   }
+    .aboutView .whatWeDo .card-container .card:nth-of-type(3) #wrench .st9 {
+        fill: white;
+        stroke: #05a0e3;
+        stroke-miterlimit: 10;
+        stroke-width: 0;
+   }
+    .aboutView .whatWeDo .card-container .card:nth-of-type(4) {
+        background-color: #05a0e3;
+        color: white;
+   }
+    .aboutView .whatWeDo .card-container .card:nth-of-type(4) #painter .st7 {
+        fill: none;
+        stroke: white;
+        stroke-miterlimit: 10;
+        stroke-width: 3;
+   }
+    .aboutView .whatWeDo .card-container .card:nth-of-type(4) #painter .st8 {
+        fill: white;
+   }
+    .aboutView .ourStandards .standard-container .standard {
+        flex-direction: column;
+        padding: 1.5em;
+   }
+    .aboutView .ourStandards .standard-container .standard .standard-text {
+        margin-left: 0;
+   }
+    .aboutView .ourStandards .standard-container .standard .standard-text h4 {
+        font-size: 1.2em;
+   }
+    .aboutView .ourStandards .standard-container .standard #standard {
+        min-width: 80px;
+        margin-bottom: 1.5em;
+        margin-right: 0;
+   }
+}
